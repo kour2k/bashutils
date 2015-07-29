@@ -3,8 +3,7 @@
 # VARIABLES
 listado="dominios.txt"
 result="AKAMAIstatus.txt"
-tmp=`mktemp -t akamai`
-
+tmp=`mktemp -t akamai.XXXXXXXXX`
 if [ $# != 0 ]; then
 	echo "Usage: $0"
 	exit 1
